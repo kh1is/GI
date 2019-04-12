@@ -1,0 +1,201 @@
+body{
+	margin: 0px;
+	padding: 0px;
+}
+
+/*------------------------------------------Start Header--------------------------------------*/
+#header{
+	background-color: #F8F9FA;
+	position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+#header-logo{
+	transition: 0.5s;
+}
+
+#header-logo:hover{
+	margin-top: 24px;
+	transform: scale(1.5);
+}
+
+#header-logo a:hover{
+	animation: roll 3s infinite;
+  	transform: rotate(30deg);
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+ }
+
+#navbar-list{
+	position: absolute;
+	right: 0px;
+}
+
+#navbar-list li a{
+	transition: 0.5s;
+	margin-left: 16px;
+}
+
+#navbar-list li a:hover{
+	transform: scale(1.5);
+}
+
+#navbar-list li a:onclick{
+	transform: 2s;
+}
+/*-------------------------------------------End Header---------------------------------------*/
+
+/*----------------------------------------Start Banner Area-----------------------------------*/
+#banner-area{
+	background: url(../img/header-bg.jpg) center;
+	height: 551px;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+#banner-area-content{
+	text-align: center;
+	position: relative;
+	top: 100px;
+}
+/*-----------------------------------------End Banner Area------------------------------------*/
+
+/*-----------------------------------------Start we offer-------------------------------------*/
+#offer{
+	margin-bottom: 48px;
+	padding: 62px;
+}
+
+#offer a:hover{
+	text-decoration: none;
+}
+/*------------------------------------------End we offer--------------------------------------*/
+
+/*------------------------------------------Start about---------------------------------------*/
+#about{
+	background-color: black;
+	background-attachment: fixed;
+}
+
+#about h1{
+	margin-top: 48px;
+}
+/*-------------------------------------------End about----------------------------------------*/
+
+/*----------------------------------------Start protfolio-------------------------------------*/
+#project{
+	padding: 62px;
+}
+
+#project img{
+	transition: 0.5s;
+	margin: 24px;
+}
+
+#project img:hover{
+	transform: scale(1.01);
+	margin: 10px;
+}
+/*-----------------------------------------End protfolio--------------------------------------*/
+
+/*---------------------------------------Start call action------------------------------------*/
+#call-action{
+	margin-top: 24px;
+	padding: 48px;
+	background: url(../img/callaction-bg.jpg) center;
+    background-attachment: fixed;
+}
+/*----------------------------------------End call action-------------------------------------*/
+
+/*-----------------------------------------Start footer---------------------------------------*/
+#footer{
+	background-color: #272727;
+	padding-top: 48px;
+}
+
+#footer.container{
+	margin: 0px;
+	padding: 0px;
+}
+
+#footer-header{
+	color: #fff;
+	text-align: center;
+	margin-bottom: 48px;
+}
+
+#footer-header i{
+	font-size: 48px;
+	-webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out
+}
+
+#footer-header i:hover{
+	-webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+#footer-social a{
+	margin: 24px;
+	font-size: 36px;
+	color: #fff;
+	text-align: center;
+	transition: 0.5s;
+}
+
+#footer-social a i:hover{
+	transform: scale(1.5);
+	/* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+    /* When the animation is finished, start again */
+    animation-iteration-count: infi
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+#copy-right{
+	color: #fff;
+	text-align: center;
+	font-weight: bold;
+	background-color: #1a1a1a;
+	margin-top: 24px;;
+	padding: 6px;
+	padding-top: 24px;
+}
+
+#copy-right p a{
+	margin: 4px;
+	animation-name: test;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    text-decoration: none;
+}
+
+@keyframes test {
+   0%   {color:#ba8f72; left:0px; top:0px;}
+    25%  {color:#fffbab; left:200px; top:0px;}
+    50%  {color:#f6d199; left:200px; top:200px;}
+    75%  {color:#a2e5a6; left:0px; top:200px;}
+    100% {color:#ba8f72; left:0px; top:0px;}
+}
+/*------------------------------------------End footer----------------------------------------*/

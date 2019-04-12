@@ -1,0 +1,180 @@
+body{
+	margin: 0px;
+	padding: 0px;
+}
+
+/*------------------------------------------Start Header--------------------------------------*/
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #F8F9FA;
+	position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+ul.topnav li {float: left;}
+
+#header-logo{
+	transition: 0.5s;
+}
+
+#header-logo:hover{
+	margin-top: 24px;
+	margin-bottom: 24px;
+	transform: scale(1.5);
+}
+
+#header-logo a:hover{
+	animation: roll 3s infinite;
+  	transform: rotate(30deg);
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+ }
+
+ul.topnav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.5s;
+    margin: 5px;
+}
+
+ul.topnav li a:hover{
+	margin: 12px;
+	transform: scale(1.5);
+}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px){
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+}
+/*-------------------------------------------End Header---------------------------------------*/
+
+/*----------------------------------------Start Banner Area-----------------------------------*/
+#banner-area{
+	background: url(../../img/temp.jpg) center;
+	height: 551px;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-color: #EAEAEA;
+}
+
+#banner-area-content{
+	text-align: center;
+	position: relative;
+	top: 50px;
+}
+/*-----------------------------------------End Banner Area------------------------------------*/
+
+/*------------------------------------------Start explain-------------------------------------*/
+#explain-area{
+	text-align: center;
+}
+
+#explain-area div {
+	margin: 48px;
+}
+
+#explain-area ul{
+	list-style: none;
+}
+/*------------------------------------------End expalin---------------------------------------*/
+
+/*-----------------------------------------Start footer---------------------------------------*/
+#footer{
+	background-color: #272727;
+	padding-top: 48px;
+}
+
+#footer.container{
+	margin: 0px;
+	padding: 0px;
+}
+
+#footer-header{
+	color: #fff;
+	text-align: center;
+	margin-bottom: 48px;
+}
+
+#footer-header i{
+	font-size: 48px;
+	-webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out
+}
+
+#footer-header i:hover{
+	-webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+#footer-social a{
+	margin: 24px;
+	font-size: 36px;
+	color: #fff;
+	text-align: center;
+	transition: 0.5s;
+}
+
+#footer-social a i:hover{
+	transform: scale(1.5);
+	/* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+    /* When the animation is finished, start again */
+    animation-iteration-count: infi
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+#copy-right{
+	color: #fff;
+	text-align: center;
+	font-weight: bold;
+	background-color: #1a1a1a;
+	margin-top: 24px;;
+	padding: 6px;
+	padding-top: 24px;
+}
+
+#copy-right p a{
+	margin: 4px;
+	animation-name: test;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    text-decoration: none;
+}
+
+@keyframes test {
+   0%   {color:#ba8f72; left:0px; top:0px;}
+    25%  {color:#fffbab; left:200px; top:0px;}
+    50%  {color:#f6d199; left:200px; top:200px;}
+    75%  {color:#a2e5a6; left:0px; top:200px;}
+    100% {color:#ba8f72; left:0px; top:0px;}
+}
+/*------------------------------------------End footer----------------------------------------*/
